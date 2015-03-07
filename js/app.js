@@ -5,6 +5,10 @@ app.config(function($routeProvider) {
 		controller: 'BookshelfController',
 		templateUrl: 'views/bookshelf.html'
 	})
+	.when('books/:bookId', {
+		controller: 'BookController',
+		templateUrl: 'book.html'
+	})
 	.otherwise({
 		redirectTo: '/books'
 	})
