@@ -7,7 +7,7 @@ app.config(function($routeProvider) {
 	})
 	.when('/books/:bookId', {
 		controller: 'BookController',
-		templateUrl: 'book.html'
+		templateUrl: 'views/book.html'
 	})
 	.otherwise({
 		redirectTo: '/books'
